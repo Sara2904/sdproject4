@@ -57,7 +57,6 @@ fig2.show()
 
 # In[9]:
 
-
 fig3 = px.scatter(df, x='odometer', y='price')
 fig3.show()
 
@@ -74,23 +73,17 @@ fig4.show()
 
 st.header("Car Advertisement Dataset Analysis")
 
-# Histogram
 st.subheader("Histogram: Price Distribution")
 fig_histogram = px.histogram(df, x='price')
 st.plotly_chart(fig_histogram)
 
-# Scatter Plot 
 st.subheader("Scatter Plot: Price vs. Odometer")
 fig_scatter = px.scatter(df, x='odometer', y='price', color='condition')
 st.plotly_chart(fig_scatter)
 
-# Checkbox
 show_data = st.checkbox("Show Raw Data")
 if show_data:
     st.write(df)
-
-
-# In[ ]:
 
 
 
