@@ -9,7 +9,7 @@ import plotly.express as px
 import streamlit as st
 
 
-df = pd.read_csv('/Users/sarar/sdproject4/vehicles_us.csv')
+df = pd.read_csv('vehicles_us.csv')
 
 figl = px.histogram(df, x='price', nbins=50)
 figl.show()
