@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 import csv
@@ -33,7 +32,3 @@ st.plotly_chart(fig_scatter)
 show_data = st.checkbox("Show Raw Data")
 if show_data:
     st.write(df)
-
-
-
-
